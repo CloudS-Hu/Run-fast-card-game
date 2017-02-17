@@ -1,0 +1,452 @@
+
+body {
+	background-color: cadetblue;
+	margin: 0 auto;
+}
+
+#bujutable{
+	width: 100%;
+	height: 100%;
+}
+
+#fenshutongjitable{
+	width: 100%;
+	text-align: center;
+	border-spacing: 0;
+}
+
+#fenshutongjitable th{
+	border-right: 1px solid black;
+}
+
+#fenshutongjitable td{
+	border-right: 1px solid black;
+}
+
+#youxixinxiDIV{
+	/*border: 1px solid black;*/
+	width: 200px;
+	height: 100%;
+	padding: 10px 20px;
+}
+
+#fenshutongjiDIV{
+	/*border: 1px solid black;*/
+	width: 200px;
+	height: 100%;
+	padding: 10px 20px;
+}
+
+/*大盘局*/
+#panjuDIV {
+	/*border: 1px solid black;*/
+	margin: auto;
+	height: 580px;
+	width: 700px;
+	position: relative;
+}
+
+/*发牌按钮*/
+#fapaibutton{
+	height: 30px;
+	width: 100px;
+	position: absolute;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+#liangpaibutton{
+	height: 30px;
+	width: 100px;
+	position: absolute;
+	top: 45px;
+	left: 10px;
+}
+
+/*玩家一*/
+#player1DIV {
+	/*border: 1px solid red;*/
+	height: 120px;
+	width: 420px;
+	position: absolute;
+	margin-top: 460px;
+	margin-left: 140px;
+}
+
+
+#player1UL{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;	
+}
+
+#player1UL li{
+	height: 90px;
+	width: 60px;
+	/*background-repeat: no-repeat;*/
+	/*background-size: 100% 100%;*/
+	/*z-index: 100;*/
+	float: left;
+	margin-left: -30px;
+	margin-top: 30px;
+}
+
+#player1UL li:first-child{
+	margin-left: 0px;
+}
+
+
+
+/*玩家二*/
+#player2DIV {
+	/*border: 1px solid red;*/
+	height: 420px;
+	width: 120px;
+	position: absolute;
+	margin-top: 80px;
+	margin-left: 580px;
+	transform: rotate(180deg);
+}
+
+#player2UL{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#player2UL li{
+	height: 90px;
+	width: 60px;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	z-index: 100;
+	margin-top: -60px;
+	margin-left: 15px;
+	transform: rotate(90deg);
+	
+}
+
+#player2UL li:first-child{
+	margin-top: -15px;
+}
+
+
+/*玩家三*/
+#player3DIV {
+	/*border: 1px solid red;*/
+	height: 120px;
+	width: 420px;
+	position: absolute;
+	margin-top: 0px;
+	margin-left: 140px;
+	transform: rotate(180deg);
+}
+#player3UL{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#player3UL li{
+	height: 90px;
+	width: 60px;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	z-index: 100;
+	float: left;
+	margin-left: -30px;
+	margin-top: 30px;
+}
+
+#player3UL li:first-child{
+	margin-left: 0px;
+}
+
+
+/*玩家四*/
+#player4DIV {
+	/*border: 1px solid red;*/
+	height: 420px;
+	width: 120px;
+	position: absolute;
+	margin-top: 80px;
+	margin-left: 0px;
+}
+
+#player4UL{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	
+}
+
+#player4UL li{
+	height: 90px;
+	width: 60px;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	z-index: 100;
+	margin-top: -60px;
+	margin-left: 15px;
+	transform: rotate(90deg);
+}
+
+#player4UL li:first-child{
+	margin-top: -15px;
+}
+
+
+/*牌桌*/
+#paizhuoDIV{
+	/*border: 1px solid blue;*/
+	height: 340px;
+	width: 460px;
+	position: absolute;
+	margin-top: 120px;
+	margin-left: 120px;
+}
+
+/*玩家一出牌按钮*/
+#chupaibutton1 {
+	height: 30px;
+	width: 100px;
+	position: absolute;
+	margin-top: 300px;
+	margin-left: 120px;
+}
+
+/*玩家一后退按钮*/
+#houtuibutton1{
+	height: 30px;
+	width: 100px;
+	position: absolute;
+	margin-top: 300px;
+	margin-left: 240px;
+}
+
+/*玩家二出牌按钮*/
+#chupaibutton2 {
+	height: 100px;
+	width: 30px;
+	position: absolute;
+	margin-top: 60px;
+	margin-left: 420px;
+}
+
+/*玩家二后退按钮*/
+#houtuibutton2{
+	height: 100px;
+	width: 30px;
+	position: absolute;
+	margin-top: 180px;
+	margin-left: 420px;
+}
+
+/*玩家三出牌按钮*/
+#chupaibutton3 {
+	height: 30px;
+	width: 100px;
+	position: absolute;
+	margin-top: 10px;
+	margin-left: 120px;
+}
+
+/*玩家三后退按钮*/
+#houtuibutton3{
+	height: 30px;
+	width: 100px;
+	position: absolute;
+	margin-top: 10px;
+	margin-left: 240px;
+}
+
+/*玩家四出牌按钮*/
+#chupaibutton4 {
+	height: 100px;
+	width: 30px;
+	position: absolute;
+	margin-top: 60px;
+	margin-left: 10px;
+}
+
+/*玩家四后退按钮*/
+#houtuibutton4{
+	height: 100px;
+	width: 30px;
+	position: absolute;
+	margin-top: 180px;
+	margin-left: 10px;
+}
+
+/*牌面*/
+#paimianDIV{
+	/*border: 1px solid yellow;*/
+	height: 240px;
+	width: 360px;
+	position: absolute;
+	margin-top: 50px;
+	margin-left: 50px;
+}
+
+/*初始牌*/
+#chushipaiDiv{
+	/*border: 1px solid red;*/
+	height: 90px;
+	width: 60px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -45px;
+	margin-left: -30px;
+}
+
+#chushipaiUL{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#chushipaiUL li{
+	height: 90px;
+	width: 60px;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	z-index: 100;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	/*transform: rotate(90deg);*/
+}
+
+/*玩家一出牌位置*/
+#playerOut1DIV {
+	/*border: 1px solid red;*/
+	height: 100px;
+	width: 140px;
+	position: absolute;
+	margin-top: 130px;
+	margin-left: 120px;
+}
+
+#playerOut1UL{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	margin-top: 20px;
+}
+
+#playerOut1UL li{
+	height: 60px;
+	width: 40px;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	z-index: 100;
+	float: left;
+	margin-left: -20px;
+	margin-top: -20px;
+}
+
+#playerOut1UL li:first-child{
+	margin-left: 0px;
+}
+
+/*玩家二出牌位置*/
+#playerOut2DIV {
+	/*border: 1px solid red;*/
+	height: 220px;
+	width: 60px;
+	position: absolute;
+	margin-top: 10px;
+	margin-left: 280px;
+	transform: rotate(180deg);
+}
+
+#playerOut2UL{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	
+}
+
+#playerOut2UL li{
+	height: 60px;
+	width: 40px;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	z-index: 100;
+	margin-top: -45px;
+	margin-left: 10px;
+	transform: rotate(90deg);
+}
+
+#playerOut2UL li:first-child{
+	margin-top: -10px;
+	
+}
+
+
+/*玩家三出牌位置*/
+#playerOut3DIV {
+	/*border: 1px solid red;*/
+	height: 100px;
+	width: 140px;
+	position: absolute;
+	margin-top: 10px;
+	margin-left: 100px;
+	transform: rotate(180deg);
+}
+
+#playerOut3UL{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	margin-top: 20px;
+}
+
+#playerOut3UL li{
+	height: 60px;
+	width: 40px;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	z-index: 100;
+	float: left;
+	margin-left: -20px;
+	margin-top: -20px;
+}
+
+#playerOut3UL li:first-child{
+	margin-left: 0px;
+}
+
+/*玩家四出牌位置*/
+#playerOut4DIV {
+	/*border: 1px solid red;*/
+	height: 220px;
+	width: 60px;
+	position: absolute;
+	margin-top: 10px;
+	margin-left: 20px;
+}
+
+#playerOut4UL{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	
+}
+
+#playerOut4UL li{
+	height: 60px;
+	width: 40px;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	z-index: 100;
+	margin-top: -45px;
+	margin-left: 10px;
+	transform: rotate(90deg);
+}
+
+#playerOut4UL li:first-child{
+	margin-top: -10px;
+}
+

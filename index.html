@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>纸牌游戏</title>
+		<link href="css/sirenpuke.css" rel="stylesheet" type="text/css" />
+
+		<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+		<script type="text/javascript" src="js/sirenpuke.js"></script>
+
+	</head>
+
+	<body onload="chushihua()">
+		<table id="bujutable" border="1">
+			<tr>
+				<td bgcolor="aqua">
+					<div id="youxixinxiDIV">
+						<h1>“跑得快”<br />扑克游戏</h1>
+						<h3>游戏规则:</h3>
+						<ol>
+							<li>牌面从小到大依次为3、4、5、6、7、8、9、10、J、Q、K、A、2；</li>
+							<li>每局均由黑桃3发牌；</li>
+							<li>玩家在有牌的情况下不能不出牌；</li>
+							<li>先出完牌的为赢家;</li>
+							<li>分数统计：剩余排数1-7支计1分/支，8-9支计2分/支，10-12支计3分/支，13支计4分/支，赢家计0分；每局分数进行累加统计，分数最少的为最终赢家。</li>
+						</ol>
+					</div>
+				</td>
+				<td>
+					<div id="panjuDIV">
+						<button id="fapaibutton" onclick="fapai()">发&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;牌</button>
+						<button id="liangpaibutton" onclick="liangpai()">亮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;牌</button>
+						<div id="player1DIV">
+							<ul id="player1UL"></ul>
+						</div>
+
+						<div id="player2DIV">
+							<ul id="player2UL"></ul>
+						</div>
+
+						<div id="player3DIV">
+							<ul id="player3UL"></ul>
+						</div>
+
+						<div id="player4DIV">
+							<ul id="player4UL"></ul>
+						</div>
+
+						<div id="paizhuoDIV">
+
+							<button id="chupaibutton1" onclick="chupai1()">玩家一出牌</button>
+							<button id="houtuibutton1" onclick="houtui1()">玩家一后退</button>
+							<button id="chupaibutton2" onclick="chupai2()">玩家二出牌</button>
+							<button id="houtuibutton2" onclick="houtui2()">玩家二后退</button>
+							<button id="chupaibutton3" onclick="chupai3()">玩家三出牌</button>
+							<button id="houtuibutton3" onclick="houtui3()">玩家三后退</button>
+							<button id="chupaibutton4" onclick="chupai4()">玩家四出牌</button>
+							<button id="houtuibutton4" onclick="houtui4()">玩家四后退</button>
+
+							<div id="paimianDIV">
+
+								<div id="chushipaiDiv">
+									<ul id="chushipaiUL"></ul>
+								</div>
+
+								<div id="playerOut1DIV">
+									<ul id="playerOut1UL"></ul>
+								</div>
+
+								<div id="playerOut2DIV">
+									<ul id="playerOut2UL"></ul>
+								</div>
+
+								<div id="playerOut3DIV">
+									<ul id="playerOut3UL"></ul>
+								</div>
+
+								<div id="playerOut4DIV">
+									<ul id="playerOut4UL"></ul>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+				</td>
+				<td bgcolor="aqua">
+					<div id="fenshutongjiDIV">
+						<h2>分数统计：</h2>
+						<table id="fenshutongjitable">
+							<tr>
+								<th>局数</th>
+								<th>玩家一</th>
+								<th>玩家二</th>
+								<th>玩家三</th>
+								<th>玩家四</th>
+							</tr>
+						</table>
+					</div>
+				</td>
+			</tr>
+		</table>
+
+	</body>
+
+</html>
